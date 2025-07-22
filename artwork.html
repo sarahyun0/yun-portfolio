@@ -19,7 +19,7 @@
             <nav>
                 <a href="index.html">home</a>
                 <a href="about.html">about</a>
-                <a href="artwork.html">artworks</a>
+                <a href="artwork.html" class="visiting">artworks</a>
                 <a href="research.html">research</a>
             </nav>
         </header>
@@ -28,24 +28,26 @@
         <!--main content-->
         <main>
             <!--My art-->
-        <h2> Artwork </h2>
+        <h2> artworks </h2>
         <section class="gallery">
             <figure class="artwork">
                 <img 
-                    src="images/2024_watercolor_figure.jpeg"
-                    alt="2024, watercolor, figure">
+                src="images/2024_watercolor_figure.jpeg"
+                alt="2024, watercolor, figure">
                 <figcaption> 2024, watercolor</figcaption>
             </figure>
             <figure class="artwork">
                 <img 
                 src="images/2023_sketch_cat.jpg"
                 alt="2023, sketch, cat">
+
             <figcaption> 2023, pen on paper</figcaption>
             </figure>
-            <figure class="artwork">                
+            <figure class="artwork">              
                 <img  
                 src="images/2024_sketch_dog.JPG"
                 alt="2024, pen on paper">
+
             <figcaption> 2024, pencil on paper</figcaption>
             </figure>
             <figure class="artwork">                
@@ -67,13 +69,20 @@
             <figcaption> 2023, pen on paper</figcaption>
             </figure>
         </section>
+
+        <div class="slideshow">
+            <img id="slide" src="art1.jpg" alt="Artwork">
+            <button onclick="prevSlide()">←</button>
+            <button onclick="nextSlide()">→</button>
+        </div>
+
         </main>
         <hr/>
 
         <footer>
             <section>
                 <h2> contacts </h2>
-                <address> <a href="sarah05yun@gmail.com"><strong> Email:</strong>sarah05yun@gmail.com </a> <br/></address>
+                <address> <a href="sarah05yun@gmail.com"><strong> Email:</strong> sarah05yun@gmail.com </a> <br/></address>
             </section>
             <br/>
         </footer>
