@@ -40,10 +40,6 @@ p {
     line-height: 1.6;
 }
 
-img {
-      -webkit-user-drag: none;
-  user-select: none;
-}
 a {
     color: black;
     text-decoration: none;
@@ -55,7 +51,7 @@ aside.title nav a:visited { /*example of a pseudo-class */
 }
 
 a.visiting { /*example of a pseudo-class */
-    background: #9ba3be;
+    background: #24254e; /* periwinkle #9ba3be */
     font-weight: bold;
 }
 
