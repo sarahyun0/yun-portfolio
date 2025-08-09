@@ -47,11 +47,13 @@ a {
 
 aside.title nav a:visited { /*example of a pseudo-class */
     background: #24254e;
+    color: #f6f6f1;
     text-decoration: double;
 }
 
 a.visiting { /*example of a pseudo-class */
     background: #24254e; /* periwinkle #9ba3be */
+    color: #f6f6f1;
     font-weight: bold;
 }
 
