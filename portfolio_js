@@ -1,0 +1,75 @@
+
+/*required elements*/
+const stylesheet = document.styleSheets;
+document.getElementById(id) /* Gets one element by its id */
+document.querySelector(selector) /*CSS selector */
+document.querySelectorAll(selector) /* Gets all matching elements as a NodeList */
+document.getElementsByClassName(className) /* Live HTMLCollection of elements with a class */
+
+/*
+Changing content / attributes
+element.textContent → Get/set text without HTML formatting
+element.innerHTML → Get/set HTML content
+element.setAttribute(name, value) / element.getAttribute(name)
+element.classList.add(), .remove(), .toggle(), .contains()
+element.style.propertyName → Set inline CSS (element.style.backgroundColor = "red")
+
+Creating and adding elements
+document.createElement(tagName) → Makes a new element
+parent.appendChild(child) → Add a node at the end
+parent.prepend(child) → Add a node at the start
+parent.insertBefore(newNode, referenceNode)
+element.remove() → Remove from DOM
+
+Events
+element.addEventListener(eventType, handler)
+Examples: "click", "input", "mouseover", "keydown", "submit"
+element.removeEventListener(eventType, handler)
+*/
+
+window.innerWidth / window.innerHeight /*Size of the viewport */
+window.scrollX / window.scrollY /* Scroll positions */
+window.scrollTo(x, y) /* Scroll to position */
+Navigation & location
+window.location /* Current URL info (window.location.href, .pathname, .search) */
+window.location.reload() /* Refresh the page */
+window.open(url, target) /* Open a new window/tab */
+
+
+/* window resizing event -> change css */
+
+window.addEventListener("resize", function() {
+    // Get current size
+    const width = window.innerWidth;
+    const height = window.innerHeight;
+  
+    // Example: Change background color if too small
+    if (width < 600) {
+      document.body.style.backgroundColor = "lightblue";
+    }
+  
+    // Example: Update some element's content
+    const status = document.getElementById("sizeStatus");
+    status.textContent = `Width: ${width}px, Height: ${height}px`;
+});
+
+let slideIndex = 1;
+showSlides(slideIndex);
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("slides");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slides[slideIndex-1].style.display = "block";
+}

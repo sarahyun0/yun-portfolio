@@ -9,10 +9,10 @@
           href="portfolio_styles.css"
           rel="stylesheet" />
         <link rel="stylesheet" href="style.css" />
-        <script src="my-js-file.js" defer></script>
+        <script src="portfolio_js.js" defer></script>
     </head>
     
-    <body oncontextmenu="return false;">
+    <body>
         <header>
             <h1> <a href="index.html">yun's portfolio</a> &gt; artworks. </h1>
             <br/>
@@ -29,6 +29,50 @@
         <main>
             <!--My art-->
         <h2> artworks </h2>
+        <section class="slideshow">
+            <figure class="slides">
+                <img 
+                src="images/2024_watercolor_figure.jpeg"
+                alt="2024, watercolor, figure">
+                <figcaption> 2024, watercolor</figcaption>
+            </figure>
+
+            <figure class="slides">
+                <img 
+                src="images/2023_sketch_cat.jpg"
+                alt="2023, sketch, cat">
+
+            <figcaption> 2023, pen on paper</figcaption>
+            </figure>
+            <figure class="slides">              
+                <img  
+                src="images/2024_sketch_dog.JPG"
+                alt="2024, pen on paper">
+
+            <figcaption> 2024, pencil on paper</figcaption>
+            </figure>
+            <figure class="slides">                
+                <img  
+                src="images/2024_sketch_figures.jpeg"
+                alt="2024, sketch, figure">
+            <figcaption> 2024, pencil on paper</figcaption>
+            </figure>
+            <figure class="slides">                
+                <img  
+                src="images/2024_sketch_figure.jpeg"
+                alt="2024, sketch, figure">
+            <figcaption> 2024, pencil on paper</figcaption>
+            </figure>
+            <figure class="slides">                
+                <img  
+                src="images/2023_sketch_landscape.jpg"
+                alt="2023, pen on paper">
+            <figcaption> 2023, pen on paper</figcaption>
+            </figure>
+            <button onclick="prevSlide()">←</button>
+            <button onclick="nextSlide()">→</button>
+        </section>
+
         <section class="gallery">
             <figure class="artwork">
                 <img 
